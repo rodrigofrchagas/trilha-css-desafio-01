@@ -18,14 +18,15 @@ body {
 }
 
 .banner {
-  background-image: url(../images/banner.png);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(49, 168, 221, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 1px solid #33a8db;
-}
-
-.banner-content {
-  background: linear-gradient(180deg, #00000099 0%, #31a8dd1a 100%);
 }
 
 .logo {
@@ -102,6 +103,10 @@ body {
   border-radius: 3.5625rem;
   border: 1px solid #33a8db;
   box-shadow: inset -2px 6px 4px #00000066;
+}
+
+.module span {
+  color: #33a8db;
 }
 
 #transform-world {
